@@ -1,0 +1,24 @@
+/* XXL DEVICES */
+@media(min-width:1400px){
+
+}
+/* XL DEVICES */
+@media(min-width:1200px) and (max-width:1399.98px){
+
+}
+/* LG DEVICES */
+@media(min-width:992px) and (max-width:1199.98px){
+
+}
+/* MD DEVICES */
+@media(min-width:768px) and (max-width:991.98px){
+
+}
+/* SM DEVICES */
+@media(min-width:576px) and (max-width:767.98px){
+
+}
+/* XS DEVICES */
+@media(max-width:575.98px){
+
+}

@@ -1,0 +1,322 @@
+/* ==================== Table Of Content Start ===================== */
+/* === 0.0)Common Section ====
+    0.1.NaVbar
+    0.2.Footer
+1.1) ==== HomePage Section ====
+    1.0.banner
+    0.2.category
+    0.3 Product
+1.2)=== Shop Page ======
+1.3) ==== Sidbar Page ======
+1.4)===== Chawkout Page ====
+1.5)======Signup =====
+1.6)===== signin =====
+/* ==================== Table Of Content End ===================== */
+:root{
+    --text-color : #11161E;
+    --hover-color : #151A32;
+    --pragraph-color : #444444;
+    --dark-color :#000000;
+    --light-color : #FFFFFF;
+    --primary-light-color :#FF6F61;
+    --primary-dark-color :#FF5645;
+    --shadow-22 : 0px 3px 10px 0 rgba(0, 0, 0, 0.08);
+    --shadow-32 : 0px 0px 50px 0 rgba(21, 26, 50, 0.1);
+    --shadow-42 : 0px 5px 30px 0 rgba(17, 22, 30, 0.08);
+    --primary-font : "Josefin Sans", sans-serif;
+    --body-font : "Roboto", sans-serif;
+}
+h1,h2,h3,h4{
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+h5,h6,button,a,ul,ol,li{
+  font-family: var(--primary-font);
+  font-weight: 600;   
+}
+body{
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+/* ============== Top Bar Start ================= */
+form.search{
+    border: 2px solid rgb(61, 196, 57);
+}
+form.search input{
+    border: none;
+}
+form.search button{
+    border: none;
+    background: #0ac45d;
+    border-radius: 0;
+    color: #000000;
+}
+ul.button-icon li:first-child{
+ margin-right: 5px;
+}
+ul.button-icon li:last-child{
+ margin-left: 5px;
+}
+ul.button-icon li button{
+    display: inline-block;
+   padding: 3px 5px;
+   transition: .5s;
+   border: none;
+   background: none;
+}
+ul.button-icon li button:hover{
+    background: var(--primary-light-color);
+}
+ul.button-icon li:last-child{
+    position: relative;
+}
+ul.button-icon li span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #FF5645;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    font-size: 11px;
+}
+/* ============== Top Bar End ================= */
+
+/* ============== Nav Bar Start ================= */
+li.nav-item a{
+ color: #FFFFFF;
+}
+li.nav-item:hover a{
+ color: #FFFFFF;
+}
+/* ============== Nav Bar End ================= */
+
+
+
+/* ==================Banner Section Start =============== */
+#banner .container{
+    height: 500px;
+}
+#banner .container .slider-banner img{
+    width: 100%;
+    height: 480px;
+    padding: 20px 0;
+}
+#banner .container .banner-card img{
+    width: 100%;
+     height: 240px;
+      padding: 20px 0;
+}
+/* ==================Banner Section Start =============== */
+
+/* ==================Category Section Start =============== */
+#category .container{
+display: flex;
+text-align: center;
+justify-content: center;
+gap: 10px 10px;
+flex-wrap: wrap;
+}
+.category-card{
+    border: 1px solid #cecbcb;;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: var(--shadow-32);
+    border-radius: 3px;
+}
+.category-card a{
+    color :#444444;
+    transition: .4s;
+}
+.category-card a:hover{
+    color: #FF5645;
+}
+/* ==================Category Section End =============== */
+
+
+/* ============== Footer Area Start ================= */
+footer{
+    background-color: #c9c9c9;
+    padding: 20px 10px;
+}
+.subscribe input{
+ background: var(--light-color);
+ border: 1px solid #fff;
+}
+.subscribe button{
+ background: var(--primary-dark-color);
+ border: none;
+ color: var(--light-color);
+}
+#footer li a{
+    color: #585555;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ============== Footer Area End ================= */
+#product .product-cart{
+    border: 1px solid rgb(182, 181, 181);
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    padding: 5px 5px;
+    margin: 5px 0;
+    position: relative;
+}
+#product .product-cart img{
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+#product .product-cart:hover img{
+    transform: scale(1.3);
+}
+#product .product-cart .product-cart-info{
+    margin-top: 10px;
+}
+#product .product-cart .product-cart-info p{
+    font-size: 16px;
+    color: #585555;
+    font-weight: 600;
+}
+#product .product-cart .product-cart-info p ins{
+    margin-right: 5px;
+}
+#product .product-cart .product-cart-info button{
+    border: none;
+    background-color: var(--primary-dark-color);
+    padding: 8px 60px;
+    color: var(--light-color);
+    margin: 5px 5px;
+}
+#product .product-cart .product-cart-info button i{
+    margin-right: 4px;
+}
+#product .product-cart .discount{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+#product .product-cart .discount span{
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    background: var(--primary-dark-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+.signin-right{
+    background-color: #eff0ef;
+    padding: 10px;
+    height: 100vh;
+}
+.signin-right a{
+    background: var(--primary-dark-color);
+    padding: 8px 30px;
+    color: var(--light-color);
+}
+.signin-left{
+    background-color: #ece4e4;
+    padding: 10px;
+}
+.signin-left img{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.signin-right .card{
+    margin-top: 100px;
+}
+.signin-right input{
+    border-radius: 0px;
+}
+.signin-right button{
+    background: var(--primary-dark-color);
+    display: inline-block;
+    padding: 8px 30px;
+    border: 0;
+    color: var(--light-color);
+    margin-top: 20px;
+}
+
+
+
+
+.product_thumb_slider img{
+    border: 2px solid rgb(216, 24, 24);
+    width: 100%;
+    height: 400px;
+}
+.product_nav_slider{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 30px;
+}
+.product_nav_slider_item.slick-center img{
+   border-radius: 10px;
+   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0); 
+}
+.product_nav_slider_item{
+    margin: 10px;
+}
+.product_nav_slider_item img{
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+#tabs ul li{
+    width: 100%;
+}
+#tabs ul li button{
+    width: 100%;
+    background: var(--dark-color);
+    padding: 10px 0px;
+    border: none;
+    color: var(--light-color);
+    transition: .4s;
+}
+#tabs ul li button.active{
+    background: var(--primary-dark-color);
+}
+#tabs ul.nav{
+display: flex;
+flex-wrap: nowrap;
+}
+#review .review-info .profile_img{
+    margin-right: 20px;
+    margin-left: 30px;
+}
+#review .review-info .profile_img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#review .review-info .profile-info span{
+    font-size: 14px;
+    color: #585555;
+    margin-left: 15px;
+}
+
+
+#profile .list-group a{
+  padding: 20px 30px;
+}
+
+#product_sidbar .product-info p{
+    font-size: 18px;
+    font-weight: 500;
+}
+#product_sidbar .product-info p ins{
+    margin-right: 4px;
+}
+
